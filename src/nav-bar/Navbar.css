@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+.base-navbar {
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    background: #0063A6;
+}
+.btn-text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #FFFCFC;
+}
+.navbar-button {
+    position: absolute;
+    width: 120px;
+    height: 40px;
+    left: 80%;
+    top: 20px;
+    background: #22B6FF;
+    border-radius: 6px;
+    border: 0;
+}
+
+.navbar-button2 {
+    position: absolute;
+    width: 120px;
+    height: 40px;
+    left: 90%;
+    top: 20px;
+    background: #22B6FF;
+    border-radius: 6px;
+    border: 0;
+}
+
+.logo {
+    position: absolute;
+    width: 49px;
+    height: 44px;
+    left: 91px;
+    top: 18px;
+}
+
+.nome-empresa {
+    position: absolute;
+    width: 122px;
+    left: 150px;
+    vertical-align: left;
+    display: flex;
+    flex-direction: row;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #22B6FF;
+}
