@@ -17,6 +17,7 @@
 }
 .navbar-button {
     position: absolute;
+    cursor: pointer;
     width: 120px;
     height: 40px;
     left: 80%;
@@ -28,6 +29,7 @@
 
 .navbar-button2 {
     position: absolute;
+    cursor: pointer;
     width: 120px;
     height: 40px;
     left: 90%;
