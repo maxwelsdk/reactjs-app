@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
+import Navbar from '../navbar/navbar';
 
-export default class Home extends Component {
+const Home = props => {
 
-    render() {
-        return(
+    return (
+        <div>
+            <Navbar />
             <p>Click on an emoji to view the emoji short name.</p>
-        )
-    }
+        </div>
+    )
 }
+
+export default Home;
