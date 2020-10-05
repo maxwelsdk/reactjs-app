@@ -1,28 +1,28 @@
 import React, { useState } from 'react';
-import {useHistory} from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
 import '../cadastro/cadastro.css'
 import TextField from '@material-ui/core/TextField'
 import { Card } from '@material-ui/core'
 import logo from '../cadastro/imgs/logo.png'
 
-const Cadastro = props =>{
+const Cadastro = props => {
 
     // var usuario = new Usuario();
 
-    const [ email, setEmail] = useState("");
-    const [ senha, setSenha] = useState("");
-    const [ usuario, setUsuario] = useState("");
-    const [ nome, setNome] = useState("");
-    const [ confirmaSenha, setConfirmaSenha] = useState("");
+    const [email, setEmail] = useState("");
+    const [senha, setSenha] = useState("");
+    const [usuario, setUsuario] = useState("");
+    const [nome, setNome] = useState("");
+    const [confirmaSenha, setConfirmaSenha] = useState("");
 
-    const history =  useHistory();
+    const history = useHistory();
 
     const routeChange = (name) => {
         let path = '/'.concat(name)
         history.push(path)
     }
 
-    function cadastro (email, senha){
+    function cadastro(email, senha) {
         console.log();
     }
 
@@ -36,20 +36,22 @@ const Cadastro = props =>{
             <div className="card-login">
                 <h1 className="title-login">Cadastrar</h1>
                 <form noValidate autoComplete="off">
-            
-                 <TextField className="input-email" id="standard-basic" label="Nome" value={nome} onChange={text => setNome(text.target.value)} />
-                 <TextField className="input-email" id="standard-basic" label="Usuario" value={usuario} onChange={text => setUsuario(text.target.value)} />
-                 <TextField className="input-pw" id="standard-basic" label="Email" value={email} onChange={text => setEmail(text.target.value)} />
-                 <TextField className="input-pw" id="standard-basic" label="Senha" value={senha} onChange={text => setSenha(text.target.value)} />
-                 {/* <TextField className="input-pw" id="standard-basic" label="Confirmar Senha" value={confirmaSenha} onChange={text => setConfirmaSenha(text.target.value)} /> */}
+
+                    <TextField className="input-email" id="standard-basic" label="Nome" value={nome} onChange={text => setNome(text.target.value)} />
+                    <div style={{ height: 30 }}></div>
+                    <TextField className="input-email" id="standard-basic" label="Usuario" value={usuario} onChange={text => setUsuario(text.target.value)} />
+                    <TextField className="input-pw" id="standard-basic" label="Email" value={email} onChange={text => setEmail(text.target.value)} />
+                    <div style={{ height: 30 }}></div>
+                    <TextField className="input-pw" type="password" id="standard-basic" label="Senha" value={senha} onChange={text => setSenha(text.target.value)} />
+                    {/* <TextField className="input-pw" id="standard-basic" label="Confirmar Senha" value={confirmaSenha} onChange={text => setConfirmaSenha(text.target.value)} /> */}
                 </form>
 
-                <button className="btn-login" onClick = {evt => cadastro()}>Cadastrar</button>
+                <button className="btn-login" onClick={evt => cadastro()}>Cadastrar</button>
                 <p className="signup"><a href="#">Já tem cadastro? entre</a><a className="back" href="#">Já tem cadastro? entre</a></p>
                 {/* <p className="back"><a href="#">Já tem cadastro? entre</a></p> */}
             </div>
         </div>
-)
+    )
 
 }
 
