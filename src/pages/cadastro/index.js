@@ -27,7 +27,7 @@ const Cadastro = props => {
     }
 
     return (
-        <div className="body" >
+        <div>
             <div>
                 <img className="logo-login" alt='logo' src={logo}></img>
                 <p className="nome" >Simple Job</p>
@@ -45,10 +45,7 @@ const Cadastro = props => {
                     <TextField className="input-pw" type="password" id="standard-basic" label="Senha" value={senha} onChange={text => setSenha(text.target.value)} />
                     {/* <TextField className="input-pw" id="standard-basic" label="Confirmar Senha" value={confirmaSenha} onChange={text => setConfirmaSenha(text.target.value)} /> */}
                 </form>
-
                 <button className="btn-login" onClick={evt => cadastro()}>Cadastrar</button>
-                <p className="signup"><a href="#">Já tem cadastro? entre</a><a className="back" href="#">Já tem cadastro? entre</a></p>
-                {/* <p className="back"><a href="#">Já tem cadastro? entre</a></p> */}
             </div>
         </div>
     )
