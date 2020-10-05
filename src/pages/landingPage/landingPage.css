@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+.base-navbar {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    background: #032559;
+}
+.btn-text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #FFFCFC;
+}
+.navbar-button {
+    position: absolute;
+    width: 120px;
+    height: 40px;
+    left: 80%;
+    top: 10px;
+    background: #22B6FF;
+    border-radius: 6px;
+    border: 0;
+}
+
+.navbar-button2 {
+    position: absolute;
+    width: 120px;
+    height: 40px;
+    left: 90%;
+    top: 10px;
+    background: #22B6FF;
+    border-radius: 6px;
+    border: 0;
+}
+
+.logo {
+    position: absolute;
+    width: 44px;
+    height: 40px;
+    left: 91px;
+    top: 11px;
+}
+
+.nome-empresa {
+    position: absolute;
+    width: 104px;
+    height: 16px;
+    left: 140px;
+    top: 0x;
+    
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 18px;
+    color: #FFFFFF;
+
+}
+.body-1{
+    position: absolute;
+    width: 100%;
+    height: 520px;
+    left: 0px;
+    top: 60px;
+    background-image: url("./imgs/bg_1.png");
+
+}
+.title-1{
+    position: absolute;
+    width: 368px;
+    height: 84px;
+    left: 82.46px;
+    top: 40px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 42px;
+
+    color: #EB9514;
+
+}
+.bodytext-1{
+    position: absolute;
+    width: 635px;
+    height: 258px;
+    left: 82.46px;
+    top: 180px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: rgba(255, 255, 255, 0.85);
+}
+.imgbody-1{
+    position: absolute;
+    width: 361px;
+    height: 361px;
+    left: 930px;
+    top: 80px;
+}
+.body-2{
+    position: absolute;
+    width: 100%;
+    height: 550.49px;
+    left: 0px;
+    top: 574px;
+    background-image: url("./imgs/bg_2.png");
+}
+.title-2{
+    position: absolute;
+    width: 508px;
+    height: 84px;
+    left: 721px;
+    top: 60px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 42px;
+
+    color: #0063A6;
+}
+.bodytext-2{
+    position: absolute;
+    width: 600px;
+    height: 438px;
+    left: 721px;
+    right: 80px;
+    top: 200px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: rgba(0, 0, 0, 0.78);
+}
+.imgbody-2{
+    position: absolute;
+    width: 479px;
+    height: 320px;
+    left: 80px;
+    top: 100px;
+}
+.body-3{
+    position: absolute;
+    width: 100%;
+    height: 480px;
+    left: 0px;
+    top: 1124px;
+
+    background: #424849;
+}
+.icon-1{
+    position: relative;
+    width: 70px;
+    height: 70px;
+    left: 120px;
+    top: 100px;
+}
+.icon-2{
+    position: relative;
+    width: 70px;
+    height: 70px;
+    left: 380px;
+    top: 100px;
+}
+.icon-3{
+    position: relative;
+    width: 70px;
+    height: 70px;
+    left: 650px;
+    top: 100px;
+}
+.icon-4{
+    position: relative;
+    width: 70px;
+    height: 70px;
+    left: 930px;
+    top: 100px;
+}
+.icon-title1{
+    position: relative;
+    width: 200px;
+    height: 60px;
+    left: 70px;
+    top: 120px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+
+    color: #EB9514;
+}
+.icon-title2{
+    position: relative;
+    width: 215px;
+    height: 60px;
+    left: 380px;
+    top: 50px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+
+    color: #EB9514;
+}
+.icon-title3{
+    position: absolute;
+    width: 215px;
+    height: 60px;
+    left: 720px;
+    top: 200px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+
+    color: #EB9514;
+}
+.icon-title4{
+    position: absolute;
+    width: 215px;
+    height: 60px;
+    left: 1050px;
+    top: 200px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+
+    color: #EB9514;
+}
+.text-icon1{
+    position: relative;
+width: 185px;
+height: 128px;
+left: 70px;
+top: 60px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: lighter;
+font-size: 13px;
+line-height: 15px;
+
+color: #FFE2B8;
+}
+.text-icon2{
+    position: absolute;
+width: 215px;
+height: 128px;
+left: 380px;
+top: 280px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: lighter;
+font-size: 13px;
+line-height: 15px;
+
+color: #FFE2B8;
+}
+.text-icon3{
+    position: absolute;
+width: 215px;
+height: 128px;
+left: 720px;
+top: 280px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: lighter;
+font-size: 13px;
+line-height: 15px;
+
+color: #FFE2B8;
+}
+.text-icon4{
+    position: absolute;
+width: 215px;
+height: 128px;
+left: 1050px;
+top: 280px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: lighter;
+font-size: 13px;
+line-height: 15px;
+
+color: #FFE2B8;
+}
+.footer{
+    position: relative;
+width: 100%;
+height: 70px;
+left: 0px;
+top: 90px;
+
+background: #C4C4C4;
+}
+.footer-text{
+    position: relative;
+width: 600px;
+height: 23px;
+left: 70px;
+top: 30px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: 300;
+font-size: 18px;
+line-height: 23px;
+
+color: #000000;
+
+}
+.facebook{
+    position: absolute;
+    left: 77.08%;
+    right: 20.49%;
+    top: 30%;
+    bottom: 1.09%;
+    
+}
+.twitter{
+    position: absolute;
+    left: 81%;
+    right: 19%;
+    top: 30%;
+    bottom: 1.09%;
+    
+}
+.whats{
+    position: absolute;
+    left: 85%;
+    right: 15%;
+    top: 30%;
+    bottom: 1.09%;
+    
+}
+.instagram{
+    position: absolute;
+    left: 89%;
+    right: 11%;
+    top: 30%;
+    bottom: 1.09%;
+    
+}
