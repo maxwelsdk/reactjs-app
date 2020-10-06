@@ -1,4 +1,6 @@
-.body{
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.body {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -6,8 +8,9 @@
     top: 0px;
     background-image: url("./imgs/bg-login.png")
 }
-.input-email{
-    
+
+.input-email {
+
     position: relative;
     width: 300px;
     height: 28px;
@@ -15,14 +18,15 @@
     top: 120px;
 }
 
-.input-pw{
+.input-pw {
     position: relative;
     width: 300px;
     height: 28px;
     left: 70px;
     top: 170px;
 }
-.btn-login{
+
+.btn-login {
     position: relative;
     width: 120px;
     height: 40px;
@@ -30,8 +34,8 @@
     top: 230px;
 
     background: #0063A6;
-    border-radius: 6px;   
-    
+    border-radius: 6px;
+
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
@@ -43,18 +47,19 @@
 
 }
 
-.card-login{
+.card-login {
     position: absolute;
     width: 450px;
     height: 500px;
     left: 850px;
     top: 60px;
-    
+
     background: #FFFFFF;
-    border-radius: 6px; 
+    border-radius: 6px;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.title-login{
+
+.title-login {
 
     position: absolute;
     width: 105px;
@@ -70,14 +75,16 @@
 
     color: #000000;
 }
-.logo-login{
+
+.logo-login {
     position: absolute;
     width: 120px;
     height: 111.84px;
     left: 100px;
     top: 130px;
 }
-.nome{
+
+.nome {
 
     position: absolute;
     width: 300px;
@@ -90,12 +97,12 @@
     font-weight: normal;
     font-size: 50px;
     line-height: 50px;
-    
 
 
     color: #FFFFFF;
 }
-.slogan{
+
+.slogan {
     position: absolute;
     width: 521px;
     height: 114px;
@@ -110,7 +117,8 @@
 
     color: #FFB932;
 }
-.signup{
+
+.signup {
 
     position: relative;
     width: 250px;
