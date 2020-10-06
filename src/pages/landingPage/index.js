@@ -36,12 +36,14 @@ const LandingPage = props =>{
                 <h1 className="title-1" >Anuncie seus serviços de forma prática e rápida</h1>
                 <p className="bodytext-1"> Tempor ad fugiat officia aute mollit esse pariatur dolore Lorem consequat anim incididunt aute velit. Cillum elit laboris ipsum do sunt esse excepteur cupidatat commodo. <br/>
                 <br/>Aliquip anim aute nulla ut aliquip dolore dolor quis anim enim in anim cupidatat id. Nulla exercitation nostrud ea voluptate est reprehenderit aliqua dolor non consequat excepteur fugiat. Fugiat dolore voluptate ea voluptate Lorem adipisicing irure cillum eiusmod reprehenderit eu cillum.</p>
+                <button className="btn-signup1" onClick ={evt => routeChange("cadastro")}>cadastre-se</button>
                 <img className="imgbody-1" alt='prof-img' src={img1} ></img>
             </div>
             <div className="body-2">
                 <h1 className="title-2" >Busque profissionais que atendam as suas necessidades</h1>
                 <p className="bodytext-2"> Tempor ad fugiat officia aute mollit esse pariatur dolore Lorem consequat anim incididunt aute velit. Cillum elit laboris ipsum do sunt esse excepteur cupidatat commodo. <br/>
                 <br/>Aliquip anim aute nulla ut aliquip dolore dolor quis anim enim in anim cupidatat id. Nulla exercitation nostrud ea voluptate est reprehenderit aliqua dolor non consequat excepteur fugiat. Fugiat dolore voluptate ea voluptate Lorem adipisicing irure cillum eiusmod reprehenderit eu cillum.</p>
+                <button className="btn-signup2" onClick ={evt => routeChange("cadastro")}>cadastre-se</button>
                 <img className="imgbody-2" alt='client-img' src={img2} ></img>
             </div> 
             <div className="body-3">

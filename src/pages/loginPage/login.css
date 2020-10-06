@@ -126,20 +126,3 @@
 
     color: #000000;
 }
-.back{
-
-    float: right;
-    position: relative;
-    width: 250px;
-    height: 16px;
-    left: 70px;
-    top: 300px;
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 16px;
-
-    color: #000000;
-}

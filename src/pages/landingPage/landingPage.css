@@ -67,6 +67,7 @@
     left: 0px;
     top: 60px;
     background-image: url("./imgs/bg_1.png");
+    background-repeat: no-repeat;
 
 }
 .title-1{
@@ -114,6 +115,7 @@
     left: 0px;
     top: 574px;
     background-image: url("./imgs/bg_2.png");
+    background-repeat: no-repeat;
 }
 .title-2{
     position: absolute;
@@ -366,4 +368,31 @@ color: #000000;
     top: 30%;
     bottom: 1.09%;
     
+}
+.btn-signup1{
+    position: absolute;
+width: 120px;
+height: 40px;
+left: 80px;
+top: 430px;
+
+background: #EB9514;
+border-radius: 6px;
+color: #FFFCFC;
+border: 0px;
+
+}
+.btn-signup2{
+    position: absolute;
+width: 120px;
+height: 40px;
+left: 720px;
+top: 450px;
+
+background:#0063A6;
+border-radius: 6px;
+color: #FFFCFC;
+border: 0px;
+
+
 }

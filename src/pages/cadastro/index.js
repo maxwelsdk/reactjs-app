@@ -1,56 +1,64 @@
 import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom'
+import {useHistory} from 'react-router-dom'
 import '../cadastro/cadastro.css'
 import TextField from '@material-ui/core/TextField'
-import { Card } from '@material-ui/core'
+import Select from '@material-ui/core/Select'
 import logo from '../cadastro/imgs/logo.png'
 
-const Cadastro = props => {
+const Cadastro = props =>{
+    
+    const [ nome, setNome] = useState("");
+    const [ usuario, setUsuario] = useState("");
+    const [ senha, setSenha] = useState("");
+    const [ senhaC, setSenhaC] = useState("");
+    const [ email, setEmail] = useState("");
+    const [perfil, setPerfil] = useState("");
 
-    // var usuario = new Usuario();
-
-    const [email, setEmail] = useState("");
-    const [senha, setSenha] = useState("");
-    const [usuario, setUsuario] = useState("");
-    const [nome, setNome] = useState("");
-    const [confirmaSenha, setConfirmaSenha] = useState("");
-
-    const history = useHistory();
+    const history =  useHistory();
 
     const routeChange = (name) => {
         let path = '/'.concat(name)
         history.push(path)
     }
+    
+    
+      const handleChange = (event) => {
+        const name = event.target.value;
+        setPerfil(name);
+        
+      };
 
-    function cadastro(email, senha) {
-        console.log();
-    }
-
-    return (
-        <div>
-            <div>
+    return(
+        
+        <div className="body0"  >
+            <div className="body-signup">
                 <img className="logo-login" alt='logo' src={logo}></img>
                 <p className="nome" >Simple Job</p>
-                <p className="slogan" >Uma maneira simplificada de trabalhar!</p>
+                <p className="slogan1" >Uma maneira simplificada de trabalhar!</p>
             </div>
-            <div className="card-login">
-                <h1 className="title-login">Cadastrar</h1>
-                <form noValidate autoComplete="off">
+            <div className="card-signup">
+                <h1 className="title-signup">Crie sua conta</h1>
+                <h5 className="text-signup">É rápido e totalmente gratuito!</h5>
 
-                    <TextField className="input-email" id="standard-basic" label="Nome" value={nome} onChange={text => setNome(text.target.value)} />
-                    <div style={{ height: 30 }}></div>
-                    <TextField className="input-email" id="standard-basic" label="Usuario" value={usuario} onChange={text => setUsuario(text.target.value)} />
-                    <TextField className="input-pw" id="standard-basic" label="Email" value={email} onChange={text => setEmail(text.target.value)} />
-                    <div style={{ height: 30 }}></div>
-                    <TextField className="input-pw" type="password" id="standard-basic" label="Senha" value={senha} onChange={text => setSenha(text.target.value)} />
-                    {/* <TextField className="input-pw" id="standard-basic" label="Confirmar Senha" value={confirmaSenha} onChange={text => setConfirmaSenha(text.target.value)} /> */}
+                <form className="input-form" noValidate autoComplete="off">
+            
+                 <TextField className="input-nome" id="standard-basic" label="Nome" value={nome} onChange={text => setNome(text.target.value)} />
+                 <TextField className="input-usuarioa" id="standard-basic" label="Usuário" value={usuario} onChange={text => setUsuario(text.target.value)} />
+                 <TextField className="input-emaila" id="standard-basic" label="Email" value={email} onChange={text => setEmail(text.target.value)} />
+                 <TextField className="input-senhaa" id="standard-basic" label="Senha" value={senha} onChange={text => setSenha(text.target.value)} />
+                 <TextField className="input-senhaC" id="standard-basic" label="Confirme sua senha" value={senhaC} onChange={text => setSenhaC(text.target.value)} />
+                 <Select  className="input-perfil" id="standard-basic" native value={perfil} onChange={handleChange}>
+                    <option >Selecione um perfil</option>
+                    <option value={"Cliente"}>Cliente</option>
+                    <option value={"Profissional"}>Profissional</option>
+
+                 </Select>
                 </form>
-                <button className="btn-login" onClick={evt => cadastro()}>Cadastrar</button>
+
+                <button className="btn-logins" onClick = {console.log(perfil)}>criar conta</button>
+                <p className="link-signup"><a href="http://localhost:3000/login">Já possui cadastro? Faça login</a></p>
             </div>
         </div>
     )
-
 }
-
-
 export default Cadastro;
