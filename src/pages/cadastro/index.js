@@ -12,10 +12,7 @@ const Cadastro = props =>{
     const [ senha, setSenha] = useState("");
     const [ senhaC, setSenhaC] = useState("");
     const [ email, setEmail] = useState("");
-    const [perfil, setPerfil] = React.useState({
-        age: '',
-        name: '',
-      });
+    const [perfil, setPerfil] = useState("");
 
     const history =  useHistory();
 
@@ -26,11 +23,9 @@ const Cadastro = props =>{
     
     
       const handleChange = (event) => {
-        const name = event.target.name;
-        setPerfil({
-          perfil,
-          [name]: event.target.value,
-        });
+        const name = event.target.value;
+        setPerfil(name);
+        
       };
 
     return(
@@ -52,7 +47,7 @@ const Cadastro = props =>{
                  <TextField className="input-emaila" id="standard-basic" label="Email" value={email} onChange={text => setEmail(text.target.value)} />
                  <TextField className="input-senhaa" id="standard-basic" label="Senha" value={senha} onChange={text => setSenha(text.target.value)} />
                  <TextField className="input-senhaC" id="standard-basic" label="Confirme sua senha" value={senhaC} onChange={text => setSenhaC(text.target.value)} />
-                 <Select  className="input-perfil" id="standard-basic" native value={perfil.age} onChange={handleChange} nameinputProps={{name: 'age', id: 'age-native-simple' }}>
+                 <Select  className="input-perfil" id="standard-basic" native value={perfil} onChange={handleChange}>
                     <option >Selecione um perfil</option>
                     <option value={"Cliente"}>Cliente</option>
                     <option value={"Profissional"}>Profissional</option>
@@ -60,7 +55,7 @@ const Cadastro = props =>{
                  </Select>
                 </form>
 
-                <button className="btn-logins" /*onClick = {evt => login(email,senha)}*/>Criar conta</button>
+                <button className="btn-logins" onClick = {console.log(perfil)}>criar conta</button>
                 <p className="link-signup"><a href="http://localhost:3000/login">Já possui cadastro? Faça login</a></p>
             </div>
         </div>

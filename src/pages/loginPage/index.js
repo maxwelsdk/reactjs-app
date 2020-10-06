@@ -65,7 +65,7 @@ const Login = props =>{
                  <TextField className="input-pw" id="standard-basic" label="Senha" value={senha} onChange={text => setSenha(text.target.value)} />
                 </form>
 
-                <button className="btn-login" onClick = {evt => login(email,senha)}>Login</button>
+                <button className="btn-login" onClick = {evt => login(email,senha)}>login</button>
                 <p className="signup"><a href="http://localhost:3000/cadastro">ainda nao tem cadastro? cadastre-se</a></p>
             </div>
         </div>
